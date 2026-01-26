@@ -14,9 +14,10 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <OnboardingScreen theme={theme} setTheme={setTheme} />
-        <LandingPage />
-        <Route path="/Signup" element={<Signup />} />
+        {/* <OnboardingScreen theme={theme} setTheme={setTheme} /> */}
+
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/signup" element={<Signup />} />
 
       </Routes>
     </BrowserRouter>

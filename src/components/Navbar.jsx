@@ -15,7 +15,7 @@ function Navbar() {
                         href="" className="bg-gray-300 rounded-sm px-6 py-1 h-fit dark:bg-purple-900  dark:text-white dark:px-6 dark:py-1 max-lg:mr-2"> sign up</a>
 
 
-                    <Link to="/Signup" className="bg-gray-300 rounded-sm px-6 py-1 h-fit dark:bg-white dark:text-purple-900 dark:px-6 dark:py-1  " >Login </Link>
+                    <Link to="/signup" className="bg-gray-300 rounded-sm px-6 py-1 h-fit dark:bg-white dark:text-purple-900 dark:px-6 dark:py-1  " >Login </Link>
                 </u>
             </div>
 

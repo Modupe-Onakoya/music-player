@@ -1,9 +1,19 @@
+import asset from "../assets/asset"
 
 function Signup() {
 
     return (
-        <div>
-            <h1>hioiiiii</h1>
+        <div className="bg-gray-300 h-[100vh]">
+
+            <img src={asset.logo} alt="" />
+
+            <form action="">
+                <h1>
+
+                </h1>
+
+            </form>
+
         </div>
     )
 
