@@ -10,7 +10,7 @@ function OnboardingScreen({ theme, setTheme }) {
             </p>
 
 
-            <Link to="/signup" className="text-end text-[13px] text-white bg-zinc-800 px-6 py-3 rounded-sm dark:text-center dark:text-sm dark:bg-purple-900">Getting started</Link>
+            <Link to="/login" className="text-end text-[13px] text-white bg-zinc-800 px-6 py-3 rounded-sm dark:text-center dark:text-sm dark:bg-purple-900">Getting started</Link>
         </div>
     )
 }
