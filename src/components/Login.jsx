@@ -1,66 +1,44 @@
+import { useState } from "react"
 import asset from "../assets/asset"
+import { Link } from "react-router-dom"
 
 function Login() {
 
+    const [formData, setFormData] = useState({ email: "", password: "" })
+
+
+
     return (
-        <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4 dark:bg-zinc-950 transition-colors">
-            <div className="w-full max-w-sm rounded-2xl bg-white p-8 shadow-xl dark:bg-gradient-to-b from-black via-purple-900 to-black border-gray-100 dark:border-zinc-800">
 
-                <div className="text-center mb-8">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Welcome back
-                    </h2>
-                    <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">
-                        Please enter your details to sign in
-                    </p>
+        <div className="px-4 max-sm:pt-10 sm:px-12 lg:px-24 xl:px-40  dark:text-white dark:bg-gradient-to-b from-black via-purple-900 to-black h-[100vh] ">
+
+            <form action="" className="flex flex-col  items-center  gap-5 py-4 text-sm ">
+                <div className="flex max-sm:flex-col max-sm:w-[80%] max-sm:space-y-1">
+                    <label htmlFor="email">email</label>
+                    <input type="email" name="email" id="email" className="bg-gray-300 w-[100%] rounded-lg px-2 py-1.5 dark:bg-white dark:text-black" placeholder="email" />
+
                 </div>
+                <div className="flex max-sm:flex-col w-[80%] space-y-1">
+                    <label htmlFor="password">password</label>
+                    <input type="password" name="password" id="password" className="bg-gray-300 w-[100%] rounded-lg px-2 py-1.5 text-sm dark:bg-white dark:text-black " placeholder="password" />
+                    <p className="text-gray-300 text-end text-[10px] dark:text-white ">forget password</p>
 
-                <div className="space-y-5">
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700 dark:text-zinc-300">Email</label>
-                        <input
-                            type="email"
-                            placeholder="name@company.com"
-                            className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                        />
-                    </div>
-
-                    <div>
-                        <div className="flex items-center justify-between">
-                            <label className="block text-sm font-medium text-gray-700 dark:text-zinc-300">Password</label>
-                            <span className="text-xs text-blue-600 cursor-pointer hover:underline dark:text-blue-400">
-                                Forgot password?
-                            </span>
-                        </div>
-                        <input
-                            type="password"
-                            placeholder="••••••••"
-                            className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                        />
-                    </div>
-
-                    <button className="w-full rounded-lg bg-blue-600 px-4 py-2.5 font-semibold text-white transition hover:bg-blue-700 active:scale-[0.98]">
-                        Sign in
-                    </button>
-
-                    <div className="relative flex items-center py-2">
-                        <div className="flex-grow border-t border-gray-200 dark:border-zinc-700"></div>
-                        <span className="flex-shrink mx-4 text-xs text-gray-400 uppercase">Or</span>
-                        <div className="flex-grow border-t border-gray-200 dark:border-zinc-700"></div>
-                    </div>
-
-                    <button className="flex w-full items-center justify-center gap-2 rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-800">
-                        Continue with Google
-                    </button>
                 </div>
+                <Link to="/home" className="text-center bg-gray-300 w-[80%] rounded-lg py-1.5 px-10 dark:bg-white dark:text-black" >Sign in</Link>
 
-                <p className="mt-8 text-center text-sm text-gray-600 dark:text-zinc-500">
-                    Don't have an account?{' '}
-                    <span className="font-medium text-blue-600 cursor-pointer hover:underline dark:text-blue-400">
-                        Sign up
-                    </span>
-                </p>
-            </div>
+
+                <p className="text-[10px] text-center dark:text-white text-gray-300 ">Dont have an account yet sign in</p>
+
+
+
+
+                or,
+                <div className="w-[80%] space-y-2 text-center max-sm:text-sm">
+                    <p className="border rounded-xl py-1 px-8  w-[100%]">Continue with google</p>
+                    <p className="border rounded-xl py-1 px-8  w-[100%]">Continue with facebook</p>
+                    <p className="border rounded-xl py-1 px-8  w-[100%]">Continue with apple</p>
+                </div>
+            </form>
         </div>
     )
 }

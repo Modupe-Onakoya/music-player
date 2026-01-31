@@ -55,7 +55,7 @@ function SignUp() {
                         <p className="mt-1 text-[10px] text-gray-500">Must be at least 8 characters.</p>
                     </div>
 
-                    <button className="w-full rounded-lg bg-blue-600 px-4 py-3 font-bold text-white transition hover:bg-blue-700 active:scale-[0.98]">
+                    <button className="w-full rounded-lg bg-purple-900 px-4 py-3 font-bold text-white transition hover:bg-blue-700 active:scale-[0.98]">
                         Create Account
                     </button>
 
@@ -77,7 +77,7 @@ function SignUp() {
 
                 <p className="mt-8 text-center text-sm text-gray-600 dark:text-zinc-500">
                     Already have an account?{' '}
-                    <span className="cursor-pointer font-semibold text-blue-600 hover:underline dark:text-blue-400">
+                    <span className="cursor-pointer font-semibold text-blue-600 hover:underline dark:text-white">
                         Log in
                     </span>
                 </p>
