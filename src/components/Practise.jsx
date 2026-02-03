@@ -19,8 +19,8 @@ function Practise() {
     return (
         <div className="pt-100">
             <form action="" onSubmit={handleSubmit(onsubmit)}>
-                <input {...register("email")} type="email" className="border" />
-                <input {...register("password")} type="password" className="border" />
+                <input {...register("email", { required: true })} type="email" className="border" />
+                <input {...register("password", { required: true })} type="password" className="border" />
 
                 <button >Submit</button></form>
 

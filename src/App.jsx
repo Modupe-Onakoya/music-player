@@ -13,22 +13,22 @@ function App() {
 
 
   return (
-    // <BrowserRouter>
+    <BrowserRouter>
 
 
-    //   <Routes>
+      <Routes>
 
-    //     <Route path="/" element={<Layout theme={theme} setTheme={setTheme} />} />
-    //     <Route path="/signup" element={<SignUp />} />
-    //     <Route path="/login" element={<Login />} />
-    //     <Route path="/home" element={<MusicHomePage />} />
+        <Route path="/" element={<Layout theme={theme} setTheme={setTheme} />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<MusicHomePage />} />
 
 
-    //   </Routes>
-    // </BrowserRouter>
-    <div>
-      <Practise />
-    </div>
+      </Routes>
+    </BrowserRouter>
+    // <div>
+    //   <Practise />
+    // </div>
   )
 
 }
