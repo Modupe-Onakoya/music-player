@@ -1,5 +1,10 @@
+import { useEffect, useState } from "react";
 
 function Home() {
+
+
+
+
     return (
         <div className=" pt-30 flex dark:text-white">
 

@@ -30,7 +30,7 @@ function Login() {
 
         <div className="px-4 max-sm:pt-10 sm:px-12 lg:px-24 xl:px-40  dark:text-white dark:bg-gradient-to-b from-black via-purple-900 to-black h-[100vh] lg:flex lg:justify-center lg:items-center ">
 
-            <form className="flex flex-col  items-center  gap-5 py-4 text-sm lg:border lg:border-gray-300 lg:shadow-lg lg:w-[30%] " onSubmit={handleSubmit(onsubmit)}>
+            <form className="flex flex-col  items-center  gap-5 py-4 text-sm  lg:shadow-lg lg:w-[30%] lg:rounded-lg  " onSubmit={handleSubmit(onsubmit)}>
                 <div className="flex max-lg:flex-col max-lg:w-[80%] max-lg:space-y-1 lg:w-[80%] ">
                     <label htmlFor="email" className="lg:hidden">email</label>
                     <input {...register("email")} type="email" name="email" id="email" className="bg-gray-300 w-[100%] rounded-lg px-2 py-1.5 dark:bg-white dark:text-black lg:border lg:bg-white lg:rounded-sm" placeholder="email" />
@@ -43,20 +43,9 @@ function Login() {
 
                 </div>
                 {/* <Link to="/home" className="text-center bg-gray-300 w-[80%] rounded-lg py-1.5 px-10 dark:bg-white dark:text-black" >Sign in</Link> */}
-                <button>Submit</button>
+                <button className="bg-gray-300 py-1 px-4 dark:bg-purple-900 rounded-sm">Submit</button>
 
 
-                <p className="text-[10px] text-center dark:text-white text-gray-300 lg:text-black lg:text-[13px] ">Dont have an account yet sign in</p>
-
-
-
-
-                or,
-                <div className="w-[80%] space-y-2 text-center max-lg:text-lg">
-                    <p className="border rounded-xl py-1 px-8  w-[100%]">Continue with google</p>
-                    <p className="border rounded-xl py-1 px-8  w-[100%]">Continue with facebook</p>
-                    <p className="border rounded-xl py-1 px-8  w-[100%]">Continue with apple</p>
-                </div>
             </form>
         </div>
     )

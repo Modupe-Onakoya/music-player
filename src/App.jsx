@@ -5,6 +5,8 @@ import Login from "./components/Login"
 import Layout from "./components/Layout"
 import Practise from "./components/Practise"
 import MusicHomePage from "./components/MusicHomePage"
+import DisplayHome from "./components/DisplayHome"
+import DisplayAlbum from "./components/DisplayAlbum"
 
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
         <Route path="/" element={<Layout theme={theme} setTheme={setTheme} />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<MusicHomePage />} />
+        <Route path="/home" element={<DisplayHome />} />
+        <Route path="/album/:id" element={<DisplayAlbum />} />
 
 
       </Routes>
